@@ -26,6 +26,12 @@ class MeatSelectionScreen extends StatelessWidget {
       imageUrl: 'assets/images/chicken.png',
       pricePerKg: 8.0,
     ),
+    MeatOption(
+      name: 'Maalaay',
+      description: 'Maalaay fresh ah',
+      imageUrl: 'assets/images/fish.png',
+      pricePerKg: 10.0,
+    ),
   ];
 
   @override

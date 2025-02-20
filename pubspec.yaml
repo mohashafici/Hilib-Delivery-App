@@ -69,7 +69,7 @@ flutter:
     - assets/images/camel.png
     - assets/images/chicken.png
     - assets/images/logo.png
-
+    - assets/images/fish.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
