@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'constants/app_theme.dart';
+import '../constants/app_theme.dart';
 import 'screens/meat_selection_screen.dart';
 
 void main() {
@@ -58,10 +58,35 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
               children: [
                 FadeTransition(
                   opacity: _controller,
-                  child: Lottie.asset(
-                    'assets/animations/meat_delivery_lottie.json',
-                    height: 150,
-                    repeat: false,
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black26,
+                              blurRadius: 10,
+                              spreadRadius: 2,
+                            ),
+                          ],
+                        ),
+                        child: ClipOval(
+                          child: Image.asset(
+                            'assets/images/logo.png', // Ensure this path is correct
+                            height: 120,
+                            width: 120,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 16),
+                      Lottie.asset(
+                        'assets/animations/meat_delivery_lottie.json',
+                        height: 180,
+                        repeat: false,
+                      ),
+                    ],
                   ),
                 ),
                 Column(
